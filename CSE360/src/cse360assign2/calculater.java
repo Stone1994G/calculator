@@ -37,7 +37,7 @@ public class calculater {
 	 */
 	public int getTotal () 
 	{
-		return 0;
+		return total;
 	}
 	
 	/**
@@ -48,6 +48,7 @@ public class calculater {
 	 */
 	public void add (int value)
 	{
+		total += value;
 		
 	}
 	
@@ -59,7 +60,7 @@ public class calculater {
 	 */
 	public void subtract (int value) 
 	{
-		
+		total -= value;
 	}
 	
 	/**
@@ -70,7 +71,7 @@ public class calculater {
 	 */
 	public void multiply (int value) 
 	{
-		
+		total *= value;
 	}
 	
 	/**
@@ -80,7 +81,10 @@ public class calculater {
 	 */
 	public void divide (int value)
 	{
-		
+		if(value == 0)
+			total = 0;
+		else
+			total /= value;
 	}
 	
 	/**
